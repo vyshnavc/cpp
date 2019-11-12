@@ -1,5 +1,5 @@
 /*write a program to display employee details*/
-#include <iostream>
+#include "../inc/cpplib"
 using namespace std;
 
 class person

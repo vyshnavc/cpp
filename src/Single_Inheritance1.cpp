@@ -1,6 +1,6 @@
 /*C++ program to read and print students information using two classes and simple inheritance.*/
 
-#include <iostream>
+#include "../inc/cpplib"
 using namespace std;
 
 //Base class

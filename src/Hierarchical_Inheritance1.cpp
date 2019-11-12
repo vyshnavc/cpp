@@ -1,6 +1,6 @@
 /*C++ program using hierarchical inheritance to get square and cube of a number.*/
 
-#include <iostream>
+#include "../inc/cpplib"
 using namespace std;
  
 class Number

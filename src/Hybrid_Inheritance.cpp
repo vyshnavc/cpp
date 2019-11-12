@@ -1,4 +1,4 @@
-#include<iostream>
+#include"../inc/cpplib"
 using namespace std;
 class base1
 {

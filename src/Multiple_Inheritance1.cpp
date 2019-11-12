@@ -1,5 +1,5 @@
 /*employee record using multiple inheritance*/
-#include<iostream>
+#include"../inc/cpplib"
 using namespace std;
 
 class personal

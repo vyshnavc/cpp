@@ -1,6 +1,6 @@
 /* C++ program to implement multilevel inheritance.*/
 
-#include <iostream>
+#include "../inc/cpplib"
 using namespace std;
  
 //Base Class : class A
