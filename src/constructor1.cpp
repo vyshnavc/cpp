@@ -13,7 +13,7 @@ class A
 		str=new char[strlen(p)+1];
 		strcpy(str,p);
 	}
-        A(A &temp)
+        A(A &temp)         //deep copy
         {
          str=new char[strlen(temp.str)+1];
          strcpy(str,temp.str);
