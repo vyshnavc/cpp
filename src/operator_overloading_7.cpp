@@ -2,56 +2,54 @@
 #include"cpplib"
 using namespace std;
 
-class A
-{
+class A{
+
 	int a;
+
 	public:
-	A()
-	{
+	A(){
 	}
-	A(int x):a(x)
-	{
+	A(int x):a(x){
 	}
-	A operator ++()
-	{
+	A operator ++(){
 		A k;
-		k.a=++a;
-                return k;
+
+		k.a = ++a;
+		return k;
 	}
-	A operator ++(int)
-	{
+	A operator ++(int){
 		A k;
-		k.a=a++;
-                return k;
+
+		k.a = a++;
+		return k;
 	}
-	A operator --()
-	{
+	A operator --(){
 		A k;
-		k.a=--a;
-                return k;
+
+		k.a = --a;
+		return k;
 	}
-	A operator --(int)
-	{
+	A operator --(int){
 		A k;
-		k.a=a--;
-                return k;
+
+		k.a = a--;
+		return k;
 	}
-        A operator +(const A &temp)
-        {
-         A k;
-         k.a=a+temp.a;
-         return k;
-        }
-	void print()
-	{
-		cout<<"a = "<<a<<endl;
+	A operator +(const A &temp){
+		A k;
+
+		k.a = a+temp.a;
+		return k;
+	}
+	void print(){
+		cout<<"a = "<< a <<endl;
 	}
 };
 
-int main()
-{
+int main(){
 	A v(1),c;
-        c= ++v + v++ + v-- + --v;
+
+	c = ++v + v++ + v-- + --v;
 	c.print();
 	v.print();
 }

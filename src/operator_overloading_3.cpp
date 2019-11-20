@@ -7,42 +7,39 @@ using namespace std;
 class A
 {
 	int x;
-	public:
-	A()
-	{
+	
+        public:
+	A(){
 	}
-	A(int a):x(a)
-	{
+	A(int a):x(a){
 	}
 	friend A operator+(const A &temp,const A &temp1);
 	friend A operator*(const A &temp,const A &temp1);
 	friend A operator-(const A &temp,const A &temp1);
-	void print_data()
-	{
+	void print_data(){
 		cout<<"x-"<<x<<endl;
 	}
 };
-A operator+(const A &temp,const A &temp1)
-{
+
+A operator+(const A &temp,const A &temp1){
 	A result;
-	result.x=temp.x+temp1.x;
+	result.x = temp.x + temp1.x;
 	return result;
 }
-A operator*(const A &temp,const A &temp1)
-{
+A operator*(const A &temp,const A &temp1){
 	A result;
-	result.x=temp.x*temp1.x;
+	result.x = temp.x * temp1.x;
 	return result;
 }
-A operator-(const A &temp,const A &temp1)
-{
+A operator-(const A &temp,const A &temp1){
 	A result;
-	result.x=temp.x-temp1.x;
+	result.x = temp.x - temp1.x;
 	return result;
 }
-int main()
-{
+
+int main(){
 	A obj1(1),obj2(2),obj3(4),obj4(5),obj5;
-	obj5=(obj1+obj2)*obj3-obj4;
+
+	obj5 = (obj1 + obj2) * obj3 - obj4;
 	obj5.print_data();
 }

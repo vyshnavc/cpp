@@ -1,29 +1,26 @@
 /*program will print different datatype variables using same function name*/
+
 #include"cpplib"
 using namespace std;
 
-class A 
-{
+class A{
 	public:
-		void print(int x)
-		{
+		void print(int x){
 			cout<<"int -x="<<x<<endl;
 		}
-		void print(float f)
-		{
+		void print(float f){
 			cout<<"float -f="<<f<<endl;
 		}
-		void print(double d)
-		{
+		void print(double d){
 			cout<<"double -d="<<d<<endl;
 		}
-		void print(char c)
-		{
+		void print(char c){
 			cout<<"char -c="<<c<<endl;
 		}
 };
-int main()
-{
+
+int main(){
+
 	A t;
 	t.print(10);
 	t.print(10.10f);

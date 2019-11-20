@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Addition 
-{
+class Addition{
 	public:
 		int sum(int num1,int num2)
 		{
@@ -14,10 +13,11 @@ class Addition
 		}
 };
 
-int main(void) 
-{
+int main(void){
+
 	Addition obj;
 	cout<<obj.sum(20, 15)<<endl;
 	cout<<obj.sum(81, 100, 10);
+
 	return 0;
 }

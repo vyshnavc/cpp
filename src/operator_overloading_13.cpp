@@ -1,16 +1,18 @@
 #include<iostream>
 using namespace std;
-class A
-{
+
+class A{
+
 	int a[5];
+
 	public:
 	A(){}
 	int & operator [](int i){return a[i];}
 };
 
-main()
-{
+main(){
 	A obj;  
+
 	cout<<"Enter data: ";
 	for(int i=0;i<5;i++)
 		cin >> obj[i];

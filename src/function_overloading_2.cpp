@@ -1,28 +1,25 @@
 #include <iostream>
 using namespace std;
 
-class Addition 
-{
+class Addition{
 	public:
-                int sum(char c='s',char c1='v')
-                {
+                int sum(char c='s',char c1='v'){
                     cout<<"c-"<<c<<" "<<"c1-"<<c1<<endl;
                 }
-		int sum(int num1,int num2)
-		{
+		int sum(int num1,int num2){
 			return num1+num2;
 		}
-		int sum(int num1,int num2, int num3)
-		{
+		int sum(int num1,int num2, int num3){
 			return num1+num2+num3;
 		}
 };
 
-int main(void) 
-{
+int main(void){
+
 	Addition obj;
 	cout<<obj.sum(20, 15)<<endl;
 	cout<<obj.sum(81, 100, 10)<<endl;;
         obj.sum('a','b');
+
 	return 0;
 }

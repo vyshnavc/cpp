@@ -23,7 +23,8 @@ CVector CVector::operator+ (CVector param) {
 }
 
 int main () {
-	CVector a (3,1);
+	
+        CVector a (3,1);
 	CVector b (1,2);
 	CVector c;
 	c = a + b;
