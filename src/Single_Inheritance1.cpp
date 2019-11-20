@@ -4,8 +4,7 @@
 using namespace std;
 
 //Base class
-class std_basic_info
-{
+class std_basic_info{
 	private:
 		char name[30];
 		int  age;
@@ -15,22 +14,19 @@ class std_basic_info
 		void putBasicInfo(void);
 };
 //derived class
-void std_basic_info::getBasicInfo(void)
-{
+void std_basic_info::getBasicInfo(void){
 	cout << "Enter student's basic information:" << endl;
 	cout << "Name?: ";    cin >> name;
 	cout << "Age?: ";     cin >> age;
 	cout << "Gender?: ";cin >> gender;
 }
 
-void std_basic_info::putBasicInfo(void)
-{
+void std_basic_info::putBasicInfo(void){
 	cout << "Name: " << name << ",Age: " << age << ",Gender: " << gender << endl;
 }
 
 //Derived class
-class std_result_info:public std_basic_info
-{
+class std_result_info:public std_basic_info{
 	private:
 		int     totalM;
 		float   perc;
@@ -41,21 +37,18 @@ class std_result_info:public std_basic_info
 };
 
 //function definitions
-void std_result_info::getResultInfo(void)
-{
+void std_result_info::getResultInfo(void){
 	cout << "Enter student's result information:" << endl;
 	cout << "Total Marks?: ";     cin >> totalM;
 	perc= (float)((totalM*100)/500);
 	cout << "Grade?: ";cin >> grade;
 }
 
-void std_result_info::putResultInfo(void)
-{
+void std_result_info::putResultInfo(void){
 	cout << "Total Marks: " << totalM << ",Percentage: " << perc << ",Grade: " << grade << endl;
 }
 
-int main()
-{
+int main(){
 	//create object of derived class
 	std_result_info std;
 

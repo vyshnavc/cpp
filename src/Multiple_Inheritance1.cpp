@@ -2,15 +2,13 @@
 #include"../inc/cpplib"
 using namespace std;
 
-class personal
-{
+class personal{
 	protected:
 		char name[50];
 		int id;
 		char gender;
 	public:
-		void getdata()
-		{
+		void getdata(){
 			cout<<"enter employeee personal details...."<<endl;
 			cout<<"name : ";
 			cin.getline(name,50);
@@ -20,35 +18,30 @@ class personal
 			cin>>gender;
 		}
 };
-class company
-{
-protected:
-char depart[50];
-char project[30];
-int time;
-public:
-		void getdatacompany()
-		{
+class company{
+	protected:
+		char depart[50];
+		char project[30];
+		int time;
+	public:
+		void getdatacompany(){
 			cout<<"enter department details...."<<endl;
 			cout<<"name : ";
-		        cin.ignore(1);
-                	cin.getline(depart,50);
+			cin.ignore(1);
+			cin.getline(depart,50);
 			cout<<"\nproject name : ";
 			cin.getline(project,30);
 			cout<<"total project duration : ";
 			cin>>time;
 		}
 };
-class derived:private personal,private company
-{
-public:
-                void getbase()
-                {
-                 getdata();
-                 getdatacompany();
-                }
-		void printdata()     //accessing protected data
-		{
+class derived:private personal,private company{
+	public:
+		void getbase(){
+			getdata();
+			getdatacompany();
+		}
+		void printdata(){     //accessing protected data
 			cout<<"\nemployeee personal details...."<<endl;
 			cout<<"Name : "<<name<<endl;
 			cout<<"id : "<<id<<endl;
@@ -60,9 +53,8 @@ public:
 		}
 };
 
-int main()
-{
-derived d;
-d.getbase();
-d.printdata();
+int main(){
+	derived d;
+	d.getbase();
+	d.printdata();
 }

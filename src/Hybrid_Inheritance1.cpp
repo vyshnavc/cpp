@@ -1,49 +1,47 @@
 #include "../inc/cpplib"
 using namespace std;  
 
-class A  
-{  
+class A  {  
 	protected:  
-		int a;  
+	
+ 	int a;  
+ 
 	public:  
-		void get_a()  
-		{  
+		void get_a(){  
 			cout << "Enter the value of 'a' : " <<endl;  
 			cin>>a;  
 		}  
 };  
 
-class B : public A   
-{  
-	protected:  
+class B : public A{  
+	protected:
+  
 		int b;  
+
 	public:  
-		void get_b()  
-		{  
+		void get_b()  {  
 			cout << "Enter the value of 'b' : " <<endl;  
 			cin>>b;  
 		}  
 };  
 
-class C   
-{  
+class C{  
 	protected:  
 		int c;  
 	public:  
-		void get_c()  
-		{  
+		void get_c()  {  
 			cout << "Enter the value of c is : " <<endl;  
 			cin>>c;  
 		}  
 };  
 
-class D : public B, public C  
-{  
+class D : public B, public C{  
 	protected:  
+
 		int d;  
+
 	public:  
-		void mul()  
-		{  
+		void mul()  {  
 			get_a();  
 			get_b();  
 			get_c();  
@@ -51,8 +49,7 @@ class D : public B, public C
 		}  
 };  
 
-int main()  
-{  
+int main(){  
 	D d;  
 	d.mul();  
 	return 0;  
